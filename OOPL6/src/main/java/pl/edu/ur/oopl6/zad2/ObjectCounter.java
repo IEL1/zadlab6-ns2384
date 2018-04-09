@@ -16,4 +16,4 @@ public class ObjectCounter {
         System.out.println("-------------------------------------------------");
         Punkt.PokazOstatniObiekt();
     }
-}
+} //Program wyświetla 10 elementów klasy. Random to generator pseudolosowy, który wyrzuca losowe liczby z podanego przez nas zakresu. 
