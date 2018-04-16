@@ -92,22 +92,50 @@ public class Complex {
     public static void Suma(int re, int im, int re1, int im1){
         double Re = re+re1;
         double Im = im+im1;
-        System.out.println(Re+" "+Im+"i");      
+    if(Im>0)
+    {
+        System.out.println("Suma: " +Re+" + "+Im+"i");
+    }
+    else 
+    {
+        System.out.println("Suma: "+Re+" - "+Math.abs(Im)+"i");
+    }
     }
     public static void Roznica(int re, int im, int re1, int im1){
         double Re = re-re1;
         double Im = im-im1;
-        System.out.println(Re+" "+Im+"i");
+          if(Im>0)
+    {
+        System.out.println("Roznica: " +Re+" + "+Im+"i");
+    }
+    else 
+    {
+        System.out.println("Roznica: "+Re+" - "+Math.abs(Im)+"i");
+    }
     }
     public static void Iloczyn(int re, int im, int re1, int im1){
         double Re = re*re1-im*im1;
         double Im = re*im1+im*re1;
-        System.out.println(Re+" "+Im+"i");
+          if(Im>0)
+    {
+        System.out.println("Iloczyn: " +Re+" + "+Im+"i");
+    }
+    else 
+    {
+        System.out.println("Iloczyn: "+Re+" - "+Math.abs(Im)+"i");
+    }
     }
     public static void Iloraz(int re, int im, int re1, int im1){
         double Re = (re*re1 + im*im1)/(re1*re1+im1*im1);
         double Im = (im*re1-re*im1)/(re1*re1+im1*im1);
-        System.out.println(Re+" "+Im+"i");
+          if(Im>0)
+    {
+        System.out.println("Iloraz: " +Re+" + "+Im+"i");
+    }
+    else 
+    {
+        System.out.println("Iloraz: "+Re+" - "+Math.abs(Im)+"i");
+    }
     }
    
 }
